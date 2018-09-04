@@ -1,0 +1,55 @@
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes hide {
+  	from {left: 0px}
+  	to {left: -300px}
+}
+
+/* Standard syntax */
+@keyframes hide {
+    from {left: 0px}
+  	to {left: -300px}
+}
+
+@-webkit-keyframes show {
+  	from {left: -300px}
+  	to {left: 0px}
+}
+
+/* Standard syntax */
+@keyframes show {
+    from {left: -300px}
+  	to {left: 0px}
+}
+
+@-webkit-keyframes hideimg {
+  	from {transform: scaleX(-1);}
+  	to {transform: scaleX(1);}
+}
+
+/* Standard syntax */
+@keyframes hideimg {
+    from {transform: scaleX(-1);}
+  	to {transform: scaleX(1);}
+}
+
+@-webkit-keyframes showimg {
+  	from {transform: scaleX(1)}
+  	to {transform: scaleX(-1)}
+}
+
+/* Standard syntax */
+@keyframes showimg {
+    from {transform: scaleX(1)}
+  	to {transform: scaleX(-1)}
+}
+
+
+@keyframes darken {
+  from {background-color: rgba(150,150,150,0.6);}
+  to {background-color: rgba(100,100,100,0.9);}
+}
+
+@keyframes lighten {
+  from {background-color: rgba(100,100,100,0.9);}
+  to {background-color: rgba(150,150,150,0.6);}
+}

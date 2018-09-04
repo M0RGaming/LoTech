@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		<title>CS10 Web1 : LOTech Main</title>
+
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/indexani.css">
+
+		<script type="text/javascript" src="js/functions/toggleden.js"></script>
+		<script type="text/javascript" src="js/api/sleep.js"></script>
+		<script type="text/javascript" src="js/api/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" id="live"></script>
+
+		<script type="text/javascript">
+			htmledit = false;
+
+			function tolight() {
+				$('html').fadeOut(250)
+				window.location = "lights"
+			};
+
+			function toSound() {
+				$('html').fadeOut(250)
+				window.location = "sound"
+			};
+
+			function toTheatre() {
+				$('html').fadeOut(250)
+				window.location = "https://osbornetheatre.com"
+			};
+		</script>
+
+	</head>
+	<body id="root">
+		
+		<div id="parallax">
+
+
+
+			<!--
+							  _   _                _           
+							 | | | | ___  __ _  __| | ___ _ __ 
+							 | |_| |/ _ \/ _` |/ _` |/ _ \ '__|
+							 |  _  |  __/ (_| | (_| |  __/ |   
+							 |_| |_|\___|\__,_|\__,_|\___|_|   
+							                                   
+			-->
+			<div class="parallax-group" style="height: 25%">
+				<div class="parallax-layer parallax-layer-base backgroundcolor" id="header">
+					<div id="logo">
+						<a href="#">
+							<img src="media/logo.png" id="logoimg">
+						</a>
+					</div>
+
+					<div id="navtitle">
+						<h1 class="title">Lillian Osborne Technical Theatre</h1>
+					</div>
+
+					<nav id="headernav">
+						<a href="#root"><b style="font-family: sans-serif;">Home</b></a>
+						||
+						<a href="#lighting">Lighting</a>
+						||
+						<a href="#sound">Sound</a>
+						||
+						<a onclick="toTheatre()">Theatre</a>
+					</nav>
+				</div>
+			</div>
+			
+
+			
+			<!-- Main Part -->
+			<div class="parallax-group" style="height: 100%">
+				<div class="parallax-layer parallax-layer-base" id="introtxt">
+					<article>
+						<h1 id="introtxttitle">Welcome to the Lillian Osborne Techincal Theatre Website</h1>
+						<h2 id="introtxtinfo">This Website is meant to be a tool that people from technical theatre can come to for either fun or to learn how to not blow up stuff. While entering this website, you may have noticed a sidebar slowly fading into the side of your screen, leaving behind an arrow. If you press that arrow, a sidebar that contains a chat room for tech students will be revealed.</h2>
+					</article>
+				</div>
+
+				<div class="parallax-layer parallax-layer-back" id="introback">
+					<img src="media/lotech.jpg" class="backimg" style="position: absolute;">
+				</div>
+				
+			</div>
+
+
+			
+
+			<div class="parallax-group" id="lighting" style="height: 100%">
+				<div class="parallax-layer parallax-layer-fore" id='lightingtxt'>
+					<article class="lightsound">
+						<h1 id="lightingtxtinfo"> Click the Button below to be taken to the lighting site, where you can learn to hang lights, patch lights, operate lights, and not blow up lights.</h1>
+						<a href="lights" class="transition">
+							<div id="lightingtxtbutton" onmouseover="darken('lightingtxtbutton')" onmouseout="lighten('lightingtxtbutton')">
+								<h2>To The Lighting Site</h2>
+							</div>
+						</a>
+					</article>
+					
+				</div>
+				<div class="parallax-layer parallax-layer-base" id="lightingback" style="z-index: -98">
+					<img src="media/peprally.jpg" class="backimg" style='position: absolute;'>
+				</div>
+			</div>
+
+			<div class="parallax-group" style="height: 100%" id="sound">
+				<div class="parallax-layer parallax-layer-base" id='soundtxt'>
+					<article class="lightsound">
+						<h1 id="soundtxtinfo"> Click the Button below to be taken to the sound site, where you can learn to make mikes work, properly plug in sound cables, operate the sound board, and not blow up speakers.</h1>
+						<a href="sound" class="transition">
+							<div id="soundtxtbutton" onmouseover="darken('soundtxtbutton')" onmouseout="lighten('soundtxtbutton')">
+								<h2>To The Sound Site</h2>
+							</div>
+						</a>
+					</article>
+				</div>
+				<div class="parallax-layer parallax-layer-back" id="soundback" style="z-index: -99">
+					<img src="media/mcbeth.jpg" class="backimg" style="position: absolute;">
+				</div>
+			</div>
+			
+
+			<div class="parallax-group" style="height: 15%" id="footer">
+				<div class="parallax-base">
+					<footer>
+						<h1 class="txtinfo" style="margin-top: 17.5%">
+							© Chinmay Patil, Lillian Osborne Technical Theatre, 2018
+						</h1>
+					</footer>
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+		<div id="sidebar">
+			<div id="techden" style="animation-name: hide; animation-duration: 3s;">
+
+				<h1>The Tech Den</h1>
+				<h2>A Discord Chat Room</h2>
+
+				<iframe src="https://titanembeds.com/embed/453048311323164673" height="400" width="300" frameborder="0">
+					
+				</iframe>
+
+				<img src="media/arrow.png" id="imgden" onclick="showDen()"
+					style="animation-name: hideimg; animation-duration: 3s;">
+			</div>
+		</div>
+
+	</body>
+
+	<script type="text/javascript">
+		function darken(element) {
+			document.getElementById(element).setAttribute('style', 'animation-name: darken;')
+		}
+
+		function lighten(element) {
+			document.getElementById(element).setAttribute('style', 'animation-name: lighten;')
+		}
+
+
+		if (htmledit === true) {
+			document.getElementById('live').setAttribute('src', 'js/api/live.js')
+			document.getElementById('sidebar').remove()
+		}
+
+		// if user is on a phone, tell them its not meant to be used on a phone (easier to do then media queries)
+		var isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
+		if (isMobile) {
+		  console.log("mobile")
+		  alert("This website is not made to be used on a phone.")
+		}
+
+
+		
+		$(document).on('click', 'a[href^="#"]', function (event) {
+			event.preventDefault();
+
+			$('html, #parallax').animate({
+				scrollTop: $($.attr(this, 'href')).offset().top
+			}, 1000);
+		})
+
+	</script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $("body").css("display", "none");
+		 	$("body").css("background-color", "black")
+		    $("body").fadeIn(1000);
+		    $("a.transition").click(function(event){
+		        event.preventDefault();
+		        $("body").css("background-color", "black")
+		        linkLocation = this.href;
+		        $("body").fadeOut(500, redirectPage);      
+		    });
+		         
+		    function redirectPage() {
+		        window.location = linkLocation;
+		    }
+
+		    setTimeout(function() {
+			    $("body").css("background-color", "darkgray")
+			}, (1000));
+		});
+	</script>
+
+
+</html>

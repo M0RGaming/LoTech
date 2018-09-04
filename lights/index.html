@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		<title>CS10 Web1 : LOTech Lights</title>
+
+		<link rel="stylesheet" type="text/css" href="../css/lightsound.css">
+		<link rel="stylesheet" type="text/css" href="../css/indexani.css">
+
+		<script type="text/javascript" src="../js/functions/toggleden.js"></script>
+		<script type="text/javascript" src="../js/api/sleep.js"></script>
+		<script type="text/javascript" src="../js/api/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" id="live"></script>
+
+		<script type="text/javascript">
+			htmledit = false;
+
+			function tolight() {
+
+			};
+
+			function toHome() {
+				$('html').fadeOut(250)
+				sleep(250)
+				window.location = "../"
+			};
+
+
+			function toTheatre() {
+				$('html').fadeOut(250)
+				window.location = "https://osbornetheatre.com"
+			};
+		</script>
+
+	</head>
+	<body id="root" style="background-color: darkslategray">
+		
+		<div id="parallax">
+
+
+
+			<!--
+							  _   _                _           
+							 | | | | ___  __ _  __| | ___ _ __ 
+							 | |_| |/ _ \/ _` |/ _` |/ _ \ '__|
+							 |  _  |  __/ (_| | (_| |  __/ |   
+							 |_| |_|\___|\__,_|\__,_|\___|_|   
+							                                   
+			-->
+			<div class="parallax-group" style="height: 25%">
+				<div class="parallax-base backgroundcolor" id="header" style="background-color: darkslategray">
+					<header>
+						<div id="logo">
+							<a href="../" class="transition">
+								<img src="../media/logo.png" id="logoimg">
+							</a>
+						</div>
+
+						<div id="navtitle">
+							<h1 class="title">LO Tech: Lights</h1>
+						</div>
+
+						<nav id="headernav">
+							<a href="../" class="transition">Home</a>
+							||
+							<a href="#root"><b style="font-family: sans-serif;">Lighting</b></a>
+							||
+							<a href="../sound" class="transition">Sound</a>
+							||
+							<a onclick="toTheatre()">Theatre</a>
+						</nav>
+					</header>
+				</div>
+			</div>
+			
+
+			
+			<!-- Main Part -->				
+				<!-- Introduction to the website -->
+				<div class="parallax-group" id="part1" style="height: 75%;">
+					<div class="parallax-back" style="z-index: -90;">
+						<img src="../media/element.jpg" class="backimg">
+					</div>
+
+					<div class="parallax-base" id="introtxt">
+						<article>
+							<h1 id="introtxttitle">Welcome to the LO:TECH Lighting Website</h1>
+							<h1 id="introtxtinfo">
+								Within this website, you will be able to learn how to use the lighting board, and most importantly, not blow up the thousands of dollars worth of lights.
+							</h1>
+						</article>
+					</div>
+				</div>
+
+				<!-- Basic Instructions for how to turn on board-->
+				<div class="parallax-group" id="part2" style="height: 100%;">
+					<div class="parallax-base" style="z-index: -50">
+						<img src="../media/power.jpg" class="backimg">
+					</div>
+
+					<div class="parallax-fore">
+						<article>
+							<h1 class="txtinfo">
+								<u>How to Turn on the Board<br></u>
+								<ol>
+									<li>Press the button</li>
+									<li>Don't touch anything</li>
+									<li>Initilise the board (Refer to the next set of instructions)</li>
+								</ol>
+								<u>How to Turn off the board<br></u>
+								<ol>
+									<li>Turn off all lights ( [1][Thru][2][1][1][Out][Enter] )</li>
+									<li>Save show</li>
+									<li>In the menu, select "Power off system"</li>
+									<li>Make sure all lights are off, if they are press ok.</li>
+								</ol>
+							</h1>
+						</article>
+					</div>
+				</div>
+
+				<div class="parallax-group" id="part3" style="height: 100%">
+					<div class="parallax-back" style="z-index: -89">
+						<img src="../media/warmup.jpg" class="backimg">
+					</div>
+
+					<div class="parallax-fore">
+						<article>
+							<h1 class="txtinfo">
+								<u>Initilizing: <b>DO NOT SKIP</b><br></u>
+								If you skip this, there is a high chance you blow stuff up.
+								<br>
+								<ol>
+									<li>Set all lights to warmup at 25%</li>
+									<ul>
+										<li>[1][Thru][2][1][1][At][2][5][Enter]</li>
+									</ul>
+									<br>
+									<li>Open the house hang</li>
+									<ol>
+										<li>Select Everything</li>
+										<li>Press Ok</li>
+									</ol>
+									<br>
+									<li>Save a new show file inside a new folder <b><u>IMMEDIATELY</u></b></li>
+								</ol>
+							</h1>
+						</article>
+					</div>
+				</div>
+
+				<div class="parallax-group" id="part4" style="height: 100%">
+					<div class="parallax-base">
+						<img src="../media/lights.jpeg" class="backimg">
+					</div>
+
+					<div class="parallax-fore">
+						<article>
+							<h1 class="txtinfo" style="margin-top: 7.5%">
+								<u>Lighting The Stage<br></u>
+								The stage is devided into 10 zones, 5 front, 5 back, going from left to right.
+								The lighting board has visual representations of channels, called tombstones.
+								Tombstones are grouped together to represent one type of lighting.
+								<ul>
+									<li>The first group of 5 are LEDs, focused stage down, and originating from the left</li>
+									<li>The second group of 5 are the same as above, but rather focused stage up.</li>
+									<li>The third and fourth groups are the same as the above, but focused from the right.</li>
+								</ul>
+								To set levels on the channels, type the channel number, or click the tombstone, then press at, then type your target intensity.
+								Some other parameters you can use are as follow.
+								<ul>
+									<li>[Thru] - Selects a range of channels (EX: [1][Thru][5][At][5][0][Enter])</li>
+									<li>[+] - Adds a channel to the selected channels (EX: [1][+][5][At][5][0][Enter])</li>
+									<li>[Out] - Sets the intensity to zero (EX: [1][Thru][2][1][1][Out][Enter])</li>
+									<li>[Full] - Oposite of Out</li>
+									<li>[Sneak] - Makes the channels fade to the selected levels (EX: [1][At][5][0][Sneak]</li>
+								</ul>
+							</h1>
+						</article>
+					</div>
+					
+				</div>
+
+
+
+			<div class="parallax-group" style="height: 15%" id="footer">
+				<div class="parallax-base">
+					<footer>
+						<h1 class="txtinfo" style="margin: 2.5%">
+							© Chinmay Patil, Lillian Osborne Technical Theatre, 2018
+						</h1>
+					</footer>
+				</div>
+			</div>
+
+
+
+
+	</body>
+
+
+
+
+<!-- SCRIPTS THAT LOAD AFTER EVERYTHING ELSE -->
+
+
+	<script type="text/javascript">
+		function darken(element) {
+			document.getElementById(element).setAttribute('style', 'animation-name: darken;')
+		}
+
+		function lighten(element) {
+			document.getElementById(element).setAttribute('style', 'animation-name: lighten;')
+		}
+
+
+		if (htmledit === true) {
+			document.getElementById('live').setAttribute('src', 'js/api/live.js')
+		}
+
+		// if user is on a phone, tell them its not meant to be used on a phone (easier to do then media queries)
+		var isMobile = /iPhone|iPod|Android/i.test(navigator.userAgent);
+		if (isMobile) {
+		  console.log("mobile")
+		  alert("This website is not made to be used on a phone.")
+		}
+
+
+		// change all a hrefs to smooth scrolls
+		$(document).on('click', 'a[href^="#"]', function (event) {
+			event.preventDefault();
+
+			$('html, #parallax').animate({
+				scrollTop: $($.attr(this, 'href')).offset().top
+			}, 1000);
+		})
+
+	</script>
+
+	<script type="text/javascript">
+
+		// on load, make the color black, then fade in
+		$(document).ready(function() {
+		    $("body").css("display", "none");
+		 	$("body").css("background-color", "black")
+		    $("body").fadeIn(1000); // fade in for 1 second
+		 
+		 	//if an a href with a class of transition is pressed, fade to black then switch to the target website
+		    $("a.transition").click(function(event){
+		        event.preventDefault();
+		        $("body").css("background-color", "black")
+		        linkLocation = this.href;
+		        $("body").fadeOut(500, redirectPage);      
+		    });
+		         
+		    function redirectPage() {
+		        window.location = linkLocation;
+		    }
+		    // change background image to grill.jpg after 1 second
+		    setTimeout(function() {
+			    $("body").css("background-color", "darkslategray")
+			}, (1000));
+		});
+	</script>
+
+</html>
