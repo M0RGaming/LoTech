@@ -3,7 +3,7 @@
 	<head>
 		
 		<meta charset="utf-8">
-		<title>CS10 Web1 : LOTech Main</title>
+		<title>LOTech Main</title>
 
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<link rel="stylesheet" type="text/css" href="css/indexani.css">
@@ -66,6 +66,8 @@
 						||
 						<a href="#sound">Sound</a>
 						||
+						<a href="#inventory">Inventory</a>
+						||
 						<a onclick="toTheatre()">Theatre</a>
 					</nav>
 				</div>
@@ -79,6 +81,8 @@
 					<article>
 						<h1 id="introtxttitle">Welcome to the Lillian Osborne Techincal Theatre Website</h1>
 						<h2 id="introtxtinfo">This Website is meant to be a tool that people from technical theatre can come to for either fun or to learn how to not blow up stuff. While entering this website, you may have noticed a sidebar slowly fading into the side of your screen, leaving behind an arrow. If you press that arrow, a sidebar that contains a chat room for tech students will be revealed.</h2>
+
+						<h2 id="introtxtclass">The Classroom code for the Tech Google Classroom is <b><i>0wv56h8</i></b></h2>
 					</article>
 				</div>
 
@@ -121,6 +125,24 @@
 				</div>
 				<div class="parallax-layer parallax-layer-back" id="soundback" style="z-index: -99">
 					<img src="media/mcbeth.jpg" class="backimg" style="position: absolute;">
+				</div>
+			</div>
+
+
+			<div class="parallax-group" id="inventory" style="height: 100%">
+				<div class="parallax-layer parallax-layer-fore" id='inventorytxt'>
+					<article class="lightsound">
+						<h1 id="inventorytxtinfo"> Click the Button below to be taken to the lighting site, where you can learn to hang lights, patch lights, operate lights, and not blow up lights.</h1>
+						<a href="http://inventory.osbornetech.ml" class="transition">
+							<div id="inventorytxtbutton" onmouseover="darken('inventorytxtbutton')" onmouseout="lighten('inventorytxtbutton')">
+								<h2>To The Inventory Site</h2>
+							</div>
+						</a>
+					</article>
+					
+				</div>
+				<div class="parallax-layer parallax-layer-base" id="inventoryback" style="z-index: -98">
+					<img src="media/inventory.png" class="backimg" style='position: absolute;'>
 				</div>
 			</div>
 			

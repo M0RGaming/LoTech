@@ -3,7 +3,7 @@
 	<head>
 		
 		<meta charset="utf-8">
-		<title>CS10 Web1 : LOTech Lights</title>
+		<title>LOTech Lights</title>
 
 		<link rel="stylesheet" type="text/css" href="../css/lightsound.css">
 		<link rel="stylesheet" type="text/css" href="../css/indexani.css">
@@ -68,6 +68,8 @@
 							||
 							<a href="../sound" class="transition">Sound</a>
 							||
+							<a href="http://inventory.osbornetech.ml" class="transition">Inventory</a>
+							||
 							<a onclick="toTheatre()">Theatre</a>
 						</nav>
 					</header>
@@ -110,10 +112,10 @@
 								</ol>
 								<u>How to Turn off the board<br></u>
 								<ol>
-									<li>Turn off all lights ( [1][Thru][2][1][1][Out][Enter] )</li>
+									<li>Turn off all lights ( [1][Thru][2][4][4][Out][Enter] )</li>
 									<li>Save show</li>
 									<li>In the menu, select "Power off system"</li>
-									<li>Make sure all lights are off, if they are press ok.</li>
+									<li>Make sure all lights are off, if they are press ok. Press [Enter]</li>
 								</ol>
 							</h1>
 						</article>
@@ -127,23 +129,30 @@
 
 					<div class="parallax-fore">
 						<article>
-							<h1 class="txtinfo">
+							<h1 class="txtinfo" style="margin-top: 7.5%;">
 								<u>Initilizing: <b>DO NOT SKIP</b><br></u>
 								If you skip this, there is a high chance you blow stuff up.
 								<br>
 								<ol>
 									<li>Set all lights to warmup at 25%</li>
 									<ul>
-										<li>[1][Thru][2][1][1][At][2][5][Enter]</li>
+										<li>[1][Thru][2][4][4][At][2][5][Enter]</li>
 									</ul>
 									<br>
-									<li>Open the house hang</li>
-									<ol>
+									<li>Follow the following steps if you are creating a new show</li>
+									<ol style="list-style: upper-roman;">
+										<li>Go to File -> Open Show</li>
+										<li>Open the house hang</li>
 										<li>Select Everything</li>
 										<li>Press Ok</li>
+										<li>Save a new show file inside a new folder <b><u>IMMEDIATELY</u></b></li>
 									</ol>
 									<br>
-									<li>Save a new show file inside a new folder <b><u>IMMEDIATELY</u></b></li>
+									<li>Follow the following steps if you are opening a previously saved show</li>
+									<ol style="list-style: upper-roman;">
+										<li>Go to File -> Open Show</li>
+										<li>Open your saved show</li>
+									</ol>
 								</ol>
 							</h1>
 						</article>
@@ -157,7 +166,7 @@
 
 					<div class="parallax-fore">
 						<article>
-							<h1 class="txtinfo" style="margin-top: 7.5%">
+							<h1 class="txtinfo" style="margin-top: 5%">
 								<u>Lighting The Stage<br></u>
 								The stage is devided into 10 zones, 5 front, 5 back, going from left to right.
 								The lighting board has visual representations of channels, called tombstones.
@@ -166,15 +175,20 @@
 									<li>The first group of 5 are LEDs, focused stage down, and originating from the left</li>
 									<li>The second group of 5 are the same as above, but rather focused stage up.</li>
 									<li>The third and fourth groups are the same as the above, but focused from the right.</li>
+									<li>All lights from channel 1 to 20 are LEDS, and channels 100 and 101 are Focusable LEDS</li>
 								</ul>
 								To set levels on the channels, type the channel number, or click the tombstone, then press at, then type your target intensity.
 								Some other parameters you can use are as follow.
 								<ul>
 									<li>[Thru] - Selects a range of channels (EX: [1][Thru][5][At][5][0][Enter])</li>
 									<li>[+] - Adds a channel to the selected channels (EX: [1][+][5][At][5][0][Enter])</li>
-									<li>[Out] - Sets the intensity to zero (EX: [1][Thru][2][1][1][Out][Enter])</li>
-									<li>[Full] - Oposite of Out</li>
-									<li>[Sneak] - Makes the channels fade to the selected levels (EX: [1][At][5][0][Sneak]</li>
+									<li>[Out] - Sets the intensity to zero (EX: [1][Thru][2][1][1][Out])</li>
+									<li>[Full] - Oposite of Out but press enter at the end</li>
+									<li>[Sneak] - Makes the channels fade to the selected levels (EX: [1][At][5][0][Sneak])</li>
+									<ul>
+										<li>Sneak does not work in [Blind]</li>
+										<li>Patch will put you into [Blind]</li>
+									</ul>
 								</ul>
 							</h1>
 						</article>
